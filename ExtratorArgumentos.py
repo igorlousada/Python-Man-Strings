@@ -8,7 +8,7 @@ class ExtratorArgumentosUrl:
     @staticmethod
     def url_valida(url):
 
-        if (url):
+        if (url and url.startswith( "https://bytebank.com/")):
             return True
         else:
             return False
@@ -45,7 +45,7 @@ class ExtratorArgumentosUrl:
         indice_inicial_valor = self.busca_moeda(busca_valor)
         valor = self.url[indice_inicial_valor:]
         return valor
-        #print(valor)
+        
 
 
 
