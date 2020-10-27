@@ -15,6 +15,8 @@ class ExtratorArgumentosUrl:
 
     def __str__(self):
         return "objeto criado"
+    def __len__(self):
+        return len(self.url)    
 
     def extrai_argumentos(self):
         moeda_origem = 'moedaorigem='
